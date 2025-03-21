@@ -40,6 +40,7 @@ elastic-kibana-local-credentials-view: ## View local Kibana credentials to acces
 	else \
 		echo "Username: elastic"; \
 		echo "Password: $$ES_PASSWORD"; \
+		ehco "Access Kibana at http://localhost:5601"; \
 	fi
 
 
