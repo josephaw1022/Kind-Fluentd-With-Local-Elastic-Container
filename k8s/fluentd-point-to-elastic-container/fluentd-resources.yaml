@@ -93,11 +93,6 @@ spec:
         version: v1
     spec:
       serviceAccountName: fluentd-sa
-      tolerations:
-      - key: node-role.kubernetes.io/control-plane
-        effect: NoSchedule
-      - key: node-role.kubernetes.io/master
-        effect: NoSchedule
       containers:
       - name: fluentd
         image: fluent/fluentd-kubernetes-daemonset:v1.18.0-debian-elasticsearch8-1.4
