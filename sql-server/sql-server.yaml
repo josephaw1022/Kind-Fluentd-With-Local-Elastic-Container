@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: sqlserver
+spec:
+  serviceName: sqlserver
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sqlserver
+  template:
+    metadata:
+      labels:
+        app: sqlserver
+    spec:
+      containers:
+        - name: sqlserver
+          image: mcr.microsoft.com/mssql/server:2022-latest
+          ports:
+            - containerPort: 1433
+          env:
+            - name: ACCEPT_EULA
+              value: "Y"
+            - name: SA_PASSWORD
+              value: "YourStrong!Passw0rd"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sqlserver
+spec:
+  clusterIP: None
+  selector:
+    app: sqlserver
+  ports:
+    - protocol: TCP
+      port: 1433
+      targetPort: 1433

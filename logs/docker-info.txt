@@ -1,0 +1,95 @@
+Client:
+ Version:    28.0.1
+ Context:    desktop-linux
+ Debug Mode: false
+ Plugins:
+  ai: Docker AI Agent - Ask Gordon (Docker Inc.)
+    Version:  v0.9.8
+    Path:     C:\Users\JoeWhiteaker\.docker\cli-plugins\docker-ai.exe
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.21.1-desktop.2
+    Path:     C:\Users\JoeWhiteaker\.docker\cli-plugins\docker-buildx.exe
+  compose: Docker Compose (Docker Inc.)
+    Version:  v2.33.1-desktop.1
+    Path:     C:\Users\JoeWhiteaker\.docker\cli-plugins\docker-compose.exe
+  debug: Get a shell into any image or container (Docker Inc.)
+    Version:  0.0.38
+    Path:     C:\Users\JoeWhiteaker\.docker\cli-plugins\docker-debug.exe
+  desktop: Docker Desktop commands (Beta) (Docker Inc.)
+    Version:  v0.1.5
+    Path:     C:\Users\JoeWhiteaker\.docker\cli-plugins\docker-desktop.exe
+  dev: Docker Dev Environments (Docker Inc.)
+    Version:  v0.1.2
+    Path:     C:\Users\JoeWhiteaker\.docker\cli-plugins\docker-dev.exe
+  extension: Manages Docker extensions (Docker Inc.)
+    Version:  v0.2.27
+    Path:     C:\Users\JoeWhiteaker\.docker\cli-plugins\docker-extension.exe
+  feedback: Provide feedback, right in your terminal! (Docker Inc.)
+    Version:  v1.0.5
+    Path:     C:\Users\JoeWhiteaker\.docker\cli-plugins\docker-feedback.exe
+  init: Creates Docker-related starter files for your project (Docker Inc.)
+    Version:  v1.4.0
+    Path:     C:\Users\JoeWhiteaker\.docker\cli-plugins\docker-init.exe
+  sbom: View the packaged-based Software Bill Of Materials (SBOM) for an image (Anchore Inc.)
+    Version:  0.6.0
+    Path:     C:\Users\JoeWhiteaker\.docker\cli-plugins\docker-sbom.exe
+  scout: Docker Scout (Docker Inc.)
+    Version:  v1.16.3
+    Path:     C:\Users\JoeWhiteaker\.docker\cli-plugins\docker-scout.exe
+
+Server:
+ Containers: 22
+  Running: 11
+  Paused: 0
+  Stopped: 11
+ Images: 67
+ Server Version: 28.0.1
+ Storage Driver: overlayfs
+  driver-type: io.containerd.snapshotter.v1
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 1
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 nvidia runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: bcc810d6b9066471b0b6fa75f557a15a1cbf31bb
+ runc version: v1.2.4-0-g6c52b3f
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: unconfined
+ Kernel Version: 5.15.167.4-microsoft-standard-WSL2
+ Operating System: Docker Desktop
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 12
+ Total Memory: 31.17GiB
+ Name: docker-desktop
+ ID: fa95ad0b-0d9c-4768-b78d-2c0304d0faea
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ HTTP Proxy: http.docker.internal:3128
+ HTTPS Proxy: http.docker.internal:3128
+ No Proxy: hubproxy.docker.internal
+ Labels:
+  com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+ Experimental: true
+ Insecure Registries:
+  hubproxy.docker.internal:5555
+  ::1/128
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+WARNING: No blkio throttle.read_bps_device support
+WARNING: No blkio throttle.write_bps_device support
+WARNING: No blkio throttle.read_iops_device support
+WARNING: No blkio throttle.write_iops_device support
+WARNING: daemon is not using the default seccomp profile

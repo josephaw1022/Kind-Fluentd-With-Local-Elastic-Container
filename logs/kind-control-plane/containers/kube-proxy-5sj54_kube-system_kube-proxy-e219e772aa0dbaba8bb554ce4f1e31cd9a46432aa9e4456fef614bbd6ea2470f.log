@@ -1,0 +1,22 @@
+2025-03-21T14:51:33.473060122Z stderr F I0321 14:51:33.472808       1 server.go:698] "Successfully retrieved node IP(s)" IPs=["172.19.0.7"]
+2025-03-21T14:51:33.473086129Z stderr F I0321 14:51:33.472948       1 conntrack.go:121] "Set sysctl" entry="net/netfilter/nf_conntrack_tcp_timeout_established" value=86400
+2025-03-21T14:51:33.473088335Z stderr F I0321 14:51:33.472973       1 conntrack.go:121] "Set sysctl" entry="net/netfilter/nf_conntrack_tcp_timeout_close_wait" value=3600
+2025-03-21T14:51:33.473089772Z stderr F E0321 14:51:33.472990       1 server.go:234] "Kube-proxy configuration may be incomplete or incorrect" err="nodePortAddresses is unset; NodePort connections will be accepted on all local IPs. Consider using `--nodeport-addresses primary`"
+2025-03-21T14:51:33.489843914Z stderr F I0321 14:51:33.489576       1 server.go:243] "kube-proxy running in dual-stack mode" primary ipFamily="IPv4"
+2025-03-21T14:51:33.48985993Z stderr F I0321 14:51:33.489633       1 server_linux.go:170] "Using iptables Proxier"
+2025-03-21T14:51:33.491904542Z stderr F I0321 14:51:33.491790       1 proxier.go:255] "Setting route_localnet=1 to allow node-ports on localhost; to change this either disable iptables.localhostNodePorts (--iptables-localhost-nodeports) or set nodePortAddresses (--nodeport-addresses) to filter loopback addresses" ipFamily="IPv4"
+2025-03-21T14:51:33.502294017Z stderr F E0321 14:51:33.502120       1 proxier.go:283] "Failed to create nfacct runner, nfacct based metrics won't be available" err="nfacct sub-system not available" ipFamily="IPv4"
+2025-03-21T14:51:33.515592691Z stderr F E0321 14:51:33.515377       1 proxier.go:283] "Failed to create nfacct runner, nfacct based metrics won't be available" err="nfacct sub-system not available" ipFamily="IPv6"
+2025-03-21T14:51:33.515617796Z stderr F I0321 14:51:33.515482       1 server.go:497] "Version info" version="v1.32.2"
+2025-03-21T14:51:33.515621819Z stderr F I0321 14:51:33.515499       1 server.go:499] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+2025-03-21T14:51:33.52803612Z stderr F E0321 14:51:33.527811       1 metrics.go:340] "failed to initialize nfacct client" err="nfacct sub-system not available"
+2025-03-21T14:51:33.540511876Z stderr F E0321 14:51:33.540335       1 metrics.go:340] "failed to initialize nfacct client" err="nfacct sub-system not available"
+2025-03-21T14:51:33.54120014Z stderr F I0321 14:51:33.541048       1 config.go:105] "Starting endpoint slice config controller"
+2025-03-21T14:51:33.541208489Z stderr F I0321 14:51:33.541099       1 shared_informer.go:313] Waiting for caches to sync for endpoint slice config
+2025-03-21T14:51:33.541211131Z stderr F I0321 14:51:33.541132       1 config.go:329] "Starting node config controller"
+2025-03-21T14:51:33.541212296Z stderr F I0321 14:51:33.541142       1 shared_informer.go:313] Waiting for caches to sync for node config
+2025-03-21T14:51:33.541213629Z stderr F I0321 14:51:33.541156       1 config.go:199] "Starting service config controller"
+2025-03-21T14:51:33.541214794Z stderr F I0321 14:51:33.541163       1 shared_informer.go:313] Waiting for caches to sync for service config
+2025-03-21T14:51:33.642315676Z stderr F I0321 14:51:33.642086       1 shared_informer.go:320] Caches are synced for service config
+2025-03-21T14:51:33.642342324Z stderr F I0321 14:51:33.642129       1 shared_informer.go:320] Caches are synced for endpoint slice config
+2025-03-21T14:51:33.643641999Z stderr F I0321 14:51:33.643221       1 shared_informer.go:320] Caches are synced for node config
